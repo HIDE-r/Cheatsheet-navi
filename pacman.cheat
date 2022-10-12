@@ -22,8 +22,11 @@ pacman -Qdt
 ; 同步操作
 ;
 
-# [sync] package or group - 从远程repo安装一个package 或 group
+# [sync] package or group -  下载安装package 或 group
 pacman -S <package>
+
+# [sync] package or group as dependency - 以依赖下载安装package 或 group
+pacman -S --asdeps <package>
 
 # [sync] upgrade installed package - 升级package, -uu开启降级功能
 pacman -Su <package>

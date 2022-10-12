@@ -1,0 +1,100 @@
+% virsh
+
+;
+; list domains
+;
+
+# [list] all VM machine
+virsh list --all
+
+# [list] running VM machine
+virsh list
+
+# [list] VM machine info
+virsh dominfo <domain>
+
+# [list] VM machine interface
+virsh domiflist
+
+;
+; manager
+;
+
+# [manager] start VM machine
+virsh start <host>
+
+# [manager] reboot VM machine
+virsh reboot <host>
+
+# [manager] shutdown VM machine
+virsh shutdown <host>
+
+# [manager] destroy VM machine
+virsh destroy <host>
+
+# [manager] enable VM machine
+virsh autostart <host>
+
+# [manager] disable VM machine
+virsh autostart --disable <host>
+
+# [manager] add custom VM machine according by xml file
+virsh define <host.xml>
+
+# [manager] remove custom VM machine
+virsh undefine <host>
+
+# [manager] edit VM machine(shutdown) xml file
+virsh edit <host>
+
+# [manager] connect VM machine console
+virsh console <host>
+
+
+;
+; network
+;
+
+# [net] [list] all network
+virsh net-list --all
+
+# [net] [list] running network
+virsh net-list --all
+
+# [net] [list] network info
+virsh net-info <network>
+
+# [net] start network
+virsh net-start <network>
+
+# [net] destroy network
+virsh net-destroy <network>
+
+# [net] enable network
+virsh net-autostart <network>
+
+# [net] disable network
+virsh net-autostart --disable <network>
+
+# [net] add custom network according to xml file
+virsh net-define <network.xml>
+
+# [net] remove custom network
+virsh net-undefine <network>
+
+
+;
+; snapshot
+;
+
+# [snapshot] create snapshot
+virsh snapshot-create-as <host> <snapshot>
+
+# [snapshot] list snapshot
+virsh snapshot-list <host>
+
+# [snapshot] remove snapshot
+virsh snapshot-delete <host> <snapshot>
+
+# [snapshot] revert from snapshot
+virsh snapshot-revert <host> <snapshot> --current
