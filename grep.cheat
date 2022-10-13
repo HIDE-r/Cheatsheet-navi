@@ -1,0 +1,87 @@
+% grep
+
+;
+; Common
+;
+
+# [common] recursive, line-number, suppress error messages
+grep -rns
+
+# [common] multi patterns match
+grep -e <PATTERN_1> -e <PATTERN_2>
+
+
+;
+; Regexp Selection
+;
+
+# [option][select] fix string
+grep -F <STRING>
+
+# [option][select] extended regular expressions
+grep -E <PATTERNS>
+
+# [option][select] basic regular expressions
+grep -G <PATTERNS>
+
+# [option][select][file] take PATTERNS from <FILE>
+grep -f <FILE>
+
+;
+; Miscellaneous
+;
+
+# [option][select] recursive, and follow all symlinks
+grep -R
+
+# [option][select] ignore case
+grep -i
+
+# [option][select] match whole word
+grep -w 
+
+# [option][select] match whole line
+grep -x
+
+# [option][select] non-matching lines
+grep -v
+
+
+;
+; File Path
+;
+
+# [option][file] search only files that match GLOB
+grep --include=<GLOB>
+
+# [option][file] skip files that match GLOB
+grep --exclude=<GLOB>
+
+# [option][file] skip files that match any file pattern from <FILE>
+grep --exclude-from=<FILE>
+
+# [option][file] skip directories that match GLOB
+grep --exclude-dir=GLOB
+
+;
+; Output
+;
+
+# [option][output] show each parts of lines that match
+grep -o 
+
+# [option][output] suppress the file name prefix
+grep -h
+
+# [option][output] max select NUM lines
+grep -m<NUM>
+
+# [option][output] print NUM lines of before context
+grep -B<NUM>
+
+# [option][output] print NUM lines of after context
+grep -A<NUM>
+
+# [option][output] print NUM lines of central context
+grep -C<NUM>
+
