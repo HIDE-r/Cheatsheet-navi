@@ -17,6 +17,9 @@ pacman -Syu
 # [common] list package not required by any package which installed as dependency package - 列出不再被依赖的package
 pacman -Qdt
 
+# [common] removing package which install as dependency and is no longer required.
+pacman -Qtdq | pacman -Rns -
+
 ;
 ; pacman -S
 ; 同步操作
