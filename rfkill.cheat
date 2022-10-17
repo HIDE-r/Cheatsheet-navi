@@ -1,0 +1,13 @@
+% rfkill
+
+# list wireless device
+rfkill list
+
+# block wireless device
+rfkill block
+
+# unblock wireless device
+rfkill unblock
+
+# toggle wireless device status
+rfkill toggle
