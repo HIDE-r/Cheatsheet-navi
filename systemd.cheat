@@ -23,20 +23,32 @@ systemctl hybrid-sleep
 ; Units
 ;
 
-# [units] runtime status - 查看unit运行时状态, 若不指定unit, 默认为查看系统状态
-systemctl status <units_or_pid>
-
 # [units] [list] units in memory - 列出当前运行的units, systemctl不带参数时的默认行为
 systemctl list-units
 
 # [units] [list] list failed units - 列出运行失败的units
 systemctl --failed
 
+# [units] show runtime status - 查看unit运行时状态, 若不指定unit, 默认为查看系统状态
+systemctl status <units_or_pid>
+
 # [units] show manual page - 列出units的帮助文档
 systemctl help <units>
 
-# [units] whether is enable - 查看units是否enable
+# [units] show properties - 列出units的属性
+systemctl show <units>
+
+# [units] show file - 列出units的文件内容
+systemctl cat <units>
+
+# [units] [check] whether is enable - 查看units是否开机启动
 systemctl is-enabled <units>
+
+# [units] [check] whether is active - 查看units是否已经运行
+systemctl is-active <units>
+
+# [units] [check] whether is failed - 查看units是否运行失败
+systemctl is-failed <units>
 
 # [units] start - 启动指定units
 systemctl start <units>
@@ -49,3 +61,64 @@ systemctl restart <units>
 
 # [units] reload - 重载unit和其配置文件
 systemctl reload <units>
+
+# [units] daemon-reload - 重载unit的改动到systemd
+systemctl daemon-reload
+
+;
+; Target
+;
+# [target] get the default target
+systemctl get-default
+
+;
+; Hostname
+;
+
+# [hostnamectl] hostname
+hostnamectl
+
+;
+; Locale
+;
+# [localectl] locale
+localectl
+
+;
+; Time
+;
+# [timedatectl] timedate
+timedatectl
+
+;
+; Login
+;
+# [loginctl] login
+loginctl
+
+;
+; Network
+;
+# [networkctl] network
+networkctl
+
+;
+; log
+;
+# [journalctl] kernel message from the current boot
+journalctl -k
+
+# [journalctl] follow the log - 实时滚动
+journalctl -f
+
+# [journalctl] unit log - 指定unit的log
+journalctl -u <unit>
+
+# [journalctl] log disk usage - log的占用情况
+journalctl --disk-usage
+
+;
+; coredump
+;
+# [coredumpctl] coredump
+coredumpctl
