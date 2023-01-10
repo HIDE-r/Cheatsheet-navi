@@ -187,3 +187,12 @@ pkgfile <file>
 
 # [sync] sync the pkgfile database - 同步远端数据库
 sudo pkgfile -u
+
+
+;
+; pacdiff
+; 处理更新的配置文件
+;
+
+# [pacdiff] process the pacnew file - 处理更新的配置文件
+pacdiff
