@@ -4,8 +4,8 @@
 ; Common
 ;
 
-# [common] recursive, line-number, suppress error messages
-grep -rns
+# [common] recursive, line-number, suppress error messages, skip binary file
+grep -rnsI
 
 # [common] multi patterns match
 grep -e <PATTERN_1> -e <PATTERN_2>
@@ -45,6 +45,9 @@ grep -x
 
 # [option][select] non-matching lines
 grep -v
+
+# [option][select] skip binary file
+grep -I
 
 
 ;
