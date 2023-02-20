@@ -1,7 +1,9 @@
 % zoxide
 
-# interactive selection - 交互式选择
+# interactive selection
+zi <KEYWORDS>
 
+# interactive query recent directories
 zoxide query -i <KEYWORDS>
 
 # list all matching directories and score
