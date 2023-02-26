@@ -1,16 +1,16 @@
 % trash
 
-# [put] trash files and directories - 移入回收站
+# [put] trash files and directories
 trash-put <file_or_dir>
 
-# [empty] empty the trashcan(s) - 清空回收站
+# [empty] empty the trashcan(s)
 trash-empty
 
-# [list] list trashed files - 列出回收站内容
+# [list] list trashed files
 trash-list
 
-# [restore] restore a trashed file - 从回收站恢复一个文件
+# [restore] restore a trashed file
 trash-restore
 
-# [remove] remove individual files from the trashcan - 在回收站删除一个文件
+# [remove] remove individual files from the trashcan
 trash-rm

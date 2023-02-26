@@ -1,0 +1,5 @@
+% doxygen
+
+# create a template configuration file
+doxygen -g <config_file>
+
