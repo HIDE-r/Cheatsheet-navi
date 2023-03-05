@@ -1,0 +1,15 @@
+% git
+
+;
+; Commit
+;
+
+# [common][commit][log] Modify the latest commit log
+git commit --amend
+
+;
+; Log
+;
+
+# [log] One line display of abbreviated log
+git log --oneline
