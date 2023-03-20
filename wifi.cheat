@@ -1,0 +1,12 @@
+% iwlist
+
+;
+;iwconfig：设置基本无线参数
+;iwlist：扫描、列出频率，比特率，密钥等
+;iwspy：获取每个节点链接的质量
+;iwpriv：操作WirelessExtensions 特定驱动
+;ifrename： 基于各种静态标准命名接口
+;
+
+# [channel] show channel info
+iwlist <IFNAME> channel

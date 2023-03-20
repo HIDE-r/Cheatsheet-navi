@@ -1,0 +1,4 @@
+% nohup
+
+# Run commands in the background and ignore SIGHUP signal, don't create nohup.out.
+nohup <CMD> >/dev/null 2>&1 &

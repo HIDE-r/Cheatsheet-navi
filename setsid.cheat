@@ -1,0 +1,4 @@
+% setsid
+
+# Run the program in a new session
+setsid <CMD>

@@ -1,0 +1,4 @@
+% groups
+
+# [group] display user's group name, default is current user
+groups <user>
