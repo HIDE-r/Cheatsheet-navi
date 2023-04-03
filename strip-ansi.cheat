@@ -1,0 +1,4 @@
+% strip-ansi
+
+# [strip-ansi] remove ANSI code to pure text
+cat <file> | strip-ansi
