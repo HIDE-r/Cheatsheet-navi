@@ -196,3 +196,10 @@ sudo pkgfile -u
 
 # [pacdiff] process the pacnew file - 处理更新的配置文件
 pacdiff
+
+
+;
+; 排序镜像源
+;
+# [mirrorlist] rate the mirrorlist
+rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist
