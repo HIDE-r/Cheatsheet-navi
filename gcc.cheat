@@ -1,0 +1,10 @@
+% gcc
+
+# header dependency tree
+gcc -H <source>
+
+# source's header dependency
+gcc -M <source>
+
+# source's header dependency, except system header
+gcc -MM <source>

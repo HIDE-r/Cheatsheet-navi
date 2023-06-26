@@ -1,0 +1,14 @@
+% proc
+
+;
+; cpuinfo
+;
+
+# [cpuinfo] Number of physical CPUs
+cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+
+# [cpuinfo] Number of cores per physical CPU
+cat /proc/cpuinfo| grep "cpu cores"| uniq
+
+# [cpuinfo] Number of logic processor per physical CPU
+cat /proc/cpuinfo| grep "processor"| wc -l

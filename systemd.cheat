@@ -4,14 +4,14 @@
 ; Power management
 ;
 
-# [systemctl] [power] reboot - 重启
+# [systemctl] [power] system reboot
 systemctl reboot
 
-# [systemctl] [power] power off - 关机
+# [systemctl] [power] system power off
 systemctl poweroff
 
 # [systemctl] [power] suspend - 挂起
-systemctl poweroff
+systemctl suspend
 
 # [systemctl] [power] hibernation - 休眠
 systemctl hibernate
@@ -115,6 +115,12 @@ loginctl
 networkctl
 
 ;
+; DNS
+;
+# [resolvectl] DNS
+resolvectl
+
+;
 ; log
 ;
 # [journalctl] kernel message from the current boot
@@ -144,3 +150,6 @@ systemd-analyze
 
 # [systemd-analyze] show detailed bootup time for each unit
 systemd-analyze blame
+
+# [systemd-analyze] show configuration file and drop-ins
+systemd-analyze cat-config <file>
