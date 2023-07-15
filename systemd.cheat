@@ -4,10 +4,10 @@
 ; Power management
 ;
 
-# [systemctl] [power] system reboot
+# [systemctl] [power] system reboot - 重启
 systemctl reboot
 
-# [systemctl] [power] system power off
+# [systemctl] [power] system power off - 关机
 systemctl poweroff
 
 # [systemctl] [power] suspend - 挂起
