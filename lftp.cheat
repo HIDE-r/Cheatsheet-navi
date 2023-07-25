@@ -1,0 +1,4 @@
+% lftp
+
+# bookmark list
+lftp -c bookmark
