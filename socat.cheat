@@ -1,0 +1,4 @@
+% socat
+
+# forward docker container dns request to host's systemd-resolved - 转发 docker dns 请求
+socat UDP-LISTEN:53,fork,reuseaddr,bind=172.17.0.1 UDP:127.0.0.53:53

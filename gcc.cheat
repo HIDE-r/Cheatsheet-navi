@@ -8,3 +8,13 @@ gcc -M <source>
 
 # source's header dependency, except system header
 gcc -MM <source>
+
+# Preprocess only; do not compile, assemble or link - 预处理
+gcc -E <source>
+
+# Compile only; do not assemble or link - 编译
+gcc -S <source>
+
+# Compile and assemble, but do not link - 编译与汇编
+gcc -c <source>
+
