@@ -119,7 +119,10 @@ pacman -Qip <package_file>
 ; pacman -U
 ;
 
-# [common] [local] Local install package (.pkg.tar.zst)
+# [common] [local] Make package which use by pacman - 根据 PKGBUILD 制作本地包
+makepkg
+
+# [common] [local] Local install package (.pkg.tar.zst) - 安装本地包
 pacman -U <file>
 
 ;
