@@ -88,3 +88,5 @@ grep -A<NUM>
 # [option][output] print NUM lines of central context
 grep -C<NUM>
 
+# [option][output] print only name of files which matches line
+grep -l
