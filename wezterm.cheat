@@ -1,0 +1,4 @@
+% wezterm
+
+# [keybinding] see the assignments in a form
+wezterm show-keys --lua
