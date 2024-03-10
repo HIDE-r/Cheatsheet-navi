@@ -1,0 +1,4 @@
+% docker
+
+# [network] clean unused network
+docker network prune
