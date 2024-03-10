@@ -1,0 +1,13 @@
+% ip
+
+# [link] interface up
+ip link set dev <interface> up
+
+# [link] set ipv4 address
+ip addr add dev <interface> <ip_address>
+
+# [route] add a static route
+ip route add <destination_ip> via <gateway_ip> dev <interface>
+
+# [route] delete a static route
+ip route del <destination_ip> dev <interface>
