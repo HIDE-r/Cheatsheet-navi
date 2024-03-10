@@ -1,0 +1,16 @@
+% marco
+
+# Trigger Console
+Fireitup
+
+# Factory Default
+cfm restore; reboot
+
+# [uboot] ping serverip
+ping $serverip
+
+# [uboot] upgrade tclinux.bin by tftp
+tftp -v 192.168.1.1 -m binary -c put ./tclinux.bin tclinux.bin
+
+# [kernel] kmsg/dmsg
+cat /proc/kmsg
