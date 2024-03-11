@@ -13,3 +13,12 @@ git commit --amend
 
 # [log] One line display of abbreviated log
 git log --oneline
+
+;
+; Patch
+;
+# [patch] check patch error if apply
+git apply --check <patch>
+
+# [patch] Generate conflict file when the patch apply has something wrong
+git apply --reject <patch>
