@@ -1,4 +1,7 @@
 % docker
 
-# [network] clean unused network
+# [image] 列出 image 的构建命令
+docker image history --no-trunc <image>
+
+# [network] 删除无用的网络
 docker network prune
