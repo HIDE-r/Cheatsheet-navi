@@ -1,0 +1,4 @@
+% btrfs
+
+# 查看 subvolume 的情况, -p 可以指定目录
+btrfs subvolume list -p /

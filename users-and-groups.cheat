@@ -2,3 +2,9 @@
 
 # [group] display user's group name, default is current user
 groups <user>
+
+# [group] 加入用户组
+usermod -a -G <group> <user>
+
+# [group] 刷新用户组成员, 常用于创建组后
+newgrp <group>

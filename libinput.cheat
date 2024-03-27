@@ -1,0 +1,4 @@
+% libinput
+
+# 查看按键的键码
+libinput debug-events --show-keycodes
