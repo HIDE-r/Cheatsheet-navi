@@ -17,8 +17,25 @@ git log --oneline
 ;
 ; Patch
 ;
+
 # [patch] check patch error if apply
 git apply --check <patch>
 
 # [patch] Generate conflict file when the patch apply has something wrong
 git apply --reject <patch>
+
+# [patch] 把 patch 应用并 commit
+git am <patch>
+
+;
+; Clean
+;
+
+# [clean] 打印会被删除的文件
+git clean -d -n
+
+# [clean] 移除工作目录中所有未追踪的文件以及空的目录(.gitignore 规则下)
+git clean -f -d
+
+# [clean] 忽略 .gitignore 规则, 移除所有的未跟踪文件以及空的目录
+git clean -d -x

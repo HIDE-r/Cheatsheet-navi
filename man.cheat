@@ -1,0 +1,4 @@
+% man
+
+# [search] 搜索命令相关的手册
+man -f <command>
