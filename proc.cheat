@@ -12,3 +12,10 @@ cat /proc/cpuinfo| grep "cpu cores"| uniq
 
 # [cpuinfo] Number of logic processor per physical CPU
 cat /proc/cpuinfo| grep "processor"| wc -l
+
+;
+; ipv4
+;
+
+# [ipv4] 开放的端口范围
+cat /proc/sys/net/ipv4/ip_local_port_range
