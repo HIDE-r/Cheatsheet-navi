@@ -114,6 +114,11 @@ loginctl
 # [networkctl] network
 networkctl
 
+# [networkctl] restart NIC
+sudo networkctl down <nic>; sudo networkctl up <nic>
+
+$ nic: networkctl list --no-legend  | awk '{print $2}'
+
 ;
 ; DNS
 ;
