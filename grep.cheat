@@ -7,7 +7,7 @@
 # [common] recursive, line-number, suppress error messages, skip binary file
 grep -rnsI
 
-# [common] multi patterns match
+# [common] multi patterns match - 同时搜索多个模式字符串
 grep -e <PATTERN_1> -e <PATTERN_2>
 
 
@@ -15,38 +15,41 @@ grep -e <PATTERN_1> -e <PATTERN_2>
 ; Regexp Selection
 ;
 
-# [option][select] fix string
+# [option][select] fix string - 纯字符串匹配
 grep -F <STRING>
 
-# [option][select] extended regular expressions
+# [option][select] extended regular expressions - 扩展正则
 grep -E <PATTERNS>
 
-# [option][select] basic regular expressions
+# [option][select] basic regular expressions - 基础正则, 默认模式
 grep -G <PATTERNS>
 
-# [option][select][file] take PATTERNS from <FILE>
+# [option][select][file] take PATTERNS from <FILE> - 从文件获取模式字符串
 grep -f <FILE>
 
 ;
 ; Miscellaneous
 ;
 
-# [option][select] recursive, and follow all symlinks
+# [option][select] recursive - 递归, 不解析软链接文件, 默认应用 -H
+grep -r
+
+# [option][select] recursive, and follow all symlinks - 递归, 解析软链接文件, 默认应用 -H
 grep -R
 
-# [option][select] ignore case
+# [option][select] ignore case - 忽略大小写
 grep -i
 
-# [option][select] match whole word
+# [option][select] match whole word - 匹配整个单词
 grep -w 
 
-# [option][select] match whole line
+# [option][select] match whole line - 匹配整行
 grep -x
 
-# [option][select] non-matching lines
+# [option][select] non-matching lines - 没有匹配的行
 grep -v
 
-# [option][select] skip binary file
+# [option][select] skip binary file - 跳过二进制文件
 grep -I
 
 
@@ -54,16 +57,16 @@ grep -I
 ; File Path
 ;
 
-# [option][file] search only files that match GLOB
+# [option][file] search only files that match GLOB - 指定目录内搜索
 grep --include=<GLOB>
 
-# [option][file] skip files that match GLOB
+# [option][file] skip files that match GLOB - 跳过指定文件
 grep --exclude=<GLOB>
 
-# [option][file] skip files that match any file pattern from <FILE>
+# [option][file] skip files that match any file pattern from <FILE> - 以文件形式提供跳过的文件
 grep --exclude-from=<FILE>
 
-# [option][file] skip directories that match GLOB
+# [option][file] skip directories that match GLOB - 跳过指定目录
 grep --exclude-dir=GLOB
 
 ;
@@ -73,7 +76,7 @@ grep --exclude-dir=GLOB
 # [option][output] show each parts of lines that match
 grep -o 
 
-# [option][output] suppress the file name prefix
+# [option][output] suppress the file name prefix - 不打印文件名
 grep -h
 
 # [option][output] max select NUM lines
@@ -88,5 +91,5 @@ grep -A<NUM>
 # [option][output] print NUM lines of central context
 grep -C<NUM>
 
-# [option][output] print only name of files which matches line
+# [option][output] print only name of files which matches line - 只打印匹配内容的文件名
 grep -l
