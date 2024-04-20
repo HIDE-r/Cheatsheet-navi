@@ -39,3 +39,6 @@ git clean -f -d
 
 # [clean] 忽略 .gitignore 规则, 移除所有的未跟踪文件以及空的目录
 git clean -d -x
+
+# [clean] 恢复仓库原始状态, 删除仓库中的子仓库
+git clean -ffdx
