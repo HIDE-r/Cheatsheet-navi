@@ -42,3 +42,11 @@ git clean -d -x
 
 # [clean] 恢复仓库原始状态, 删除仓库中的子仓库
 git clean -ffdx
+
+;
+; Clone
+;
+
+# [clone] 指定私钥下载
+; 范例: git clone -c "core.sshCommand=ssh -i ~/.ssh/id_tenda_gerrit" "ssh://liaokangning@172.16.30.72:29418/UGW_main" test_build
+git clone -c "core.sshCommand=ssh -i <private key>" <ssh_url>
