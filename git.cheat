@@ -57,5 +57,13 @@ git clone -c "core.sshCommand=ssh -i <private key>" <ssh_url>
 ;
 ; Show
 ;
-# [show] 查看指定commit版本的文件
+# [show] 查看指定版本的文件
 git show <commit>:<file>
+
+;
+; Checkout
+;
+# [checkout] 文件回退到指定版本
+git checkout <commit> <file>
+
+
