@@ -1,0 +1,10 @@
+% wsl
+
+# 开启代理
+sudo systemctl start clash@root.service
+
+# 关闭代理
+sudo systemctl start clash@root.service
+
+# 切换root用户
+sudo su root
