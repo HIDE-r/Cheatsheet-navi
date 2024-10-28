@@ -1,5 +1,19 @@
 % git
 
+; 可供参考的链接：https://github.com/jaywcjlove/git-tips
+
+;
+; Config
+;
+# [config] 查看配置
+git config --list
+
+# [config] 配置用户名, 仅在当前仓库有效
+git config --local user.name <name>
+
+# [config] 配置用户邮箱, 仅在当前仓库有效
+git config --local user.email <url>
+
 ;
 ; Commit
 ;
@@ -67,3 +81,8 @@ git show <commit>:<file>
 git checkout <commit> <file>
 
 
+;
+; Branch
+;
+# [branch] 拉取远端新分支到本地, 同时与本地新分支建立关联
+git checkout -b <local_branch> <remote_branch>
