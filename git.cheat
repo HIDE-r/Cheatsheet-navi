@@ -74,6 +74,9 @@ git clone -c "core.sshCommand=ssh -i <private key>" <ssh_url>
 # [show] 查看指定版本的文件
 git show <commit>:<file>
 
+# [show] 查看HEAD往前第n个commit
+git show HEAD~<number>
+
 ;
 ; Checkout
 ;
