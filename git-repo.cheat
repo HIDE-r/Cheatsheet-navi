@@ -1,4 +1,7 @@
-% git-repo
+% repo
 
-# [git-repo] [show] 查看文件状态
+# [show] 查看文件状态
 repo status
+
+# [show] 查看管理的仓库
+repo list
