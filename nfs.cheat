@@ -1,0 +1,8 @@
+% nfs
+
+# 重新导出映射表
+exportfs -arv
+
+# 查看当前映射表
+exportfs -v
+
