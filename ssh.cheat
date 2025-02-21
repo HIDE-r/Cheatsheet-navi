@@ -1,0 +1,4 @@
+% ssh
+
+# 测试 ssh://[user@]hostname[:port] 协议的联通性
+ssh -vT <ssh_url>
