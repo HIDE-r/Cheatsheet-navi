@@ -3,5 +3,23 @@
 # [image] 列出 image 的构建命令
 docker image history --no-trunc <image>
 
+# [image] 列出拥有的 image
+docker image ls
+
+# [image] 清理无用的 image
+docker image prune
+
 # [network] 删除无用的网络
 docker network prune
+
+# [container] 列出所有 container 的运行情况
+docker container ps -a
+
+# [container] 清理无用的 container
+docker container prune
+
+# [container] 指定 container 执行一个命令
+docker container exec -it <container> <command>
+
+# [compose] 运行一个容器执行一个命令
+docker-compose run --rm <service> <command>
