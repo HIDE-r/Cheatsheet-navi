@@ -1,0 +1,4 @@
+% kill
+
+# 信号列表
+kill -l | tr ' ' '\n' | nl
