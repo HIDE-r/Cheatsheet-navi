@@ -1,0 +1,7 @@
+% cscope
+
+# 以当前数据库打开 cscope 主界面
+cscope -d
+
+# 构建数据库
+cscope -bkqR
