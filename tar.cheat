@@ -1,0 +1,4 @@
+% tar
+
+# 查看压缩包的文件列表
+tar -tvf <compress_file>

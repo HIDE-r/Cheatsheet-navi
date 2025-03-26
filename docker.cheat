@@ -21,5 +21,17 @@ docker container prune
 # [container] 指定 container 执行一个命令
 docker container exec -it <container> <command>
 
-# [compose] 运行一个容器执行一个命令
-docker-compose run --rm <service> <command>
+# [compose] 创建并后台运行容器
+docker compose up -d
+
+# [compose] 停止并删除容器
+docker compose down
+
+# [compose] 运行一个容器并执行一个命令
+docker compose run --rm <service> <command>
+
+# [compose] 停止服务的容器
+docker compose stop
+
+# [compose] 指定服务容器执行一个命令
+docker compose exec <service> <command>
