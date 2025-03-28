@@ -1,0 +1,4 @@
+% vim
+
+# [vim] [grep] 使用 vim 打开搜索结果
+grep <regexp> | vim -q -
