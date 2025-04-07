@@ -89,3 +89,9 @@ git checkout <commit> <file>
 ;
 # [branch] 拉取远端新分支到本地, 同时与本地新分支建立关联
 git checkout -b <local_branch> <remote_branch>
+
+;
+; Gc
+;
+# [gc] 垃圾回收, 清理无用对象, 并尝试压缩历史
+git gc --aggressive --prune=now
