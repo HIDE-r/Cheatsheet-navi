@@ -1,0 +1,4 @@
+% chmod
+
+# 设置可执行权限
+chmod u+x <program>
