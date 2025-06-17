@@ -95,3 +95,12 @@ git checkout -b <local_branch> <remote_branch>
 ;
 # [gc] 垃圾回收, 清理无用对象, 并尝试压缩历史
 git gc --aggressive --prune=now
+
+;
+; Remote
+;
+# [remote] 查看当前远程仓库地址
+git remote -v
+
+# [remote] 设置远程仓库地址
+git remote set-url <remote_name> <new_url>
