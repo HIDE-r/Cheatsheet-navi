@@ -21,6 +21,9 @@ git config --local user.email <url>
 # [common][commit][log] Modify the latest commit log
 git commit --amend
 
+# [common][commit] 添加用户签名
+git commit --signoff
+
 ;
 ; Log
 ;
