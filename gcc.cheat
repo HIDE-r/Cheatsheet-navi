@@ -18,3 +18,5 @@ gcc -S <source>
 # Compile and assemble, but do not link - 编译与汇编
 gcc -c <source>
 
+# library path which matches -L<path>
+gcc -Wl,--verbose
