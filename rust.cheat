@@ -1,0 +1,4 @@
+% rust
+
+# 查看安装的工具链
+rustup target list --installed
