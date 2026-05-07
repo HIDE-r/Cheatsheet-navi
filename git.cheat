@@ -77,8 +77,11 @@ git clone -c "core.sshCommand=ssh -i <private key>" <ssh_url>
 # [show] 查看指定版本的文件
 git show <commit>:<file>
 
-# [show] 查看HEAD往前第n个commit
+# [show] 查看 HEAD 往前第 n 个 commit
 git show HEAD~<number>
+
+# [show] 检查文件被哪个规则文件忽略
+git check-ignore -v <file>
 
 ;
 ; Checkout
