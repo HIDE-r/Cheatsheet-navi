@@ -17,8 +17,8 @@ pacman -Syu
 # [common] List package not required by any package which installed as dependency package
 pacman -Qdt
 
-# [common] Removing package which install as dependency and is no longer required. (-tt to include optdepends)
-pacman -Qtdq | pacman -Rns -
+# [common] 删除作为显式依赖安装且不再被需要的包 (-tt 同时删除作为选项依赖安装的包)
+pacman -Qtdq | sudo pacman -Rns -
 
 # [search] Search matching strings package in remote database
 pacman -Ss <regex>
