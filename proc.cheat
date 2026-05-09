@@ -4,13 +4,13 @@
 ; cpuinfo
 ;
 
-# [cpuinfo] Number of physical CPUs - 物理 CPU 个数
+# [cpuinfo] 物理 CPU 个数
 cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
 
-# [cpuinfo] Number of cores per physical CPU - 每个物理 CPU 的核数
+# [cpuinfo] 每个物理 CPU 的核数
 cat /proc/cpuinfo| grep "cpu cores"| uniq
 
-# [cpuinfo] Number of logic processor per physical CPU - 每个物理 CPU 的逻辑处理器数量
+# [cpuinfo] 每个物理 CPU 的逻辑处理器数量
 cat /proc/cpuinfo| grep "processor"| wc -l
 
 ;
