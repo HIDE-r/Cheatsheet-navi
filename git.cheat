@@ -18,30 +18,36 @@ git config --local user.email <url>
 ; Commit
 ;
 
-# [common][commit][log] Modify the latest commit log
+# [common][commit][log] 修改最后一次提交的 commit message
 git commit --amend
 
-# [common][commit] 添加用户签名
+# [common][commit] commit message 添加用户签名
 git commit --signoff
 
 ;
 ; Log
 ;
 
-# [log] One line display of abbreviated log
+# [log] 单行显示的缩略日志
 git log --oneline
 
 # [log] 不分页打印 log
 git --no-pager log
 
+# [log] 通过函数名查看函数的修改历史
+git log -L:<function_name>:<file>
+
+# [log] 查看文件指定行范围内的修改历史
+git log -L<start_line>,<end_line>:<file>
+
 ;
 ; Patch
 ;
 
-# [patch] check patch error if apply
+# [patch] 检查 patch 是否有误
 git apply --check <patch>
 
-# [patch] Generate conflict file when the patch apply has something wrong
+# [patch] 应用 patch, 失败时生成冲突文件
 git apply --reject <patch>
 
 # [patch] 把 patch 应用并 commit
