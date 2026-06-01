@@ -1,0 +1,7 @@
+% pass
+
+# [show] 列出所有的密码项
+pass show
+
+# [show] 查看某个密码项的内容
+pass show <password-item>

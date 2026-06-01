@@ -1,0 +1,16 @@
+% gpg
+
+# 生成密钥
+gpg --full-generate-key
+
+# 查看公钥
+gpg -k 
+
+# 删除公钥
+gpg --delete-keys <fingerprint>
+
+# 查看私钥
+gpg -K
+
+# 删除私钥
+gpg --delete-secret-keys <fingerprint>

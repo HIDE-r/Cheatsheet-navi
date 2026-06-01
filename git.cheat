@@ -14,6 +14,9 @@ git config --local user.name <name>
 # [config] 配置用户邮箱, 仅在当前仓库有效
 git config --local user.email <url>
 
+# [config] 查询配置项的值, 以及该配置项的来源
+git config --show-origin --get <config_key>
+
 ;
 ; Commit
 ;
