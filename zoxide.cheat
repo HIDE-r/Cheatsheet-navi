@@ -1,10 +1,7 @@
 % zoxide
 
-# interactive selection
+# [cd] 交互式查询目录
 zi <KEYWORDS>
 
-# interactive query recent directories
-zoxide query -i <KEYWORDS>
-
-# list all matching directories and score
+# [show] 列出所有匹配的目录和分数
 zoxide query -ls

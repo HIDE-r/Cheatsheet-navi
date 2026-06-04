@@ -1,4 +1,4 @@
 % lftp
 
-# bookmark list
+# [show] 书签列表
 lftp -c bookmark

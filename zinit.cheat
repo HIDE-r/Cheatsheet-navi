@@ -2,16 +2,16 @@
 
 $ zinit_cache_folder: echo "$HOME/.local/share/zinit"
 
-# [core] show Zinit status - 概述
+# [core] zinit 状态概述
 zinit zstatus
 
-# [core] statistics plugin load times - 统计 plugin 加载时间，与加载顺序排序
+# [core] 统计 plugin 加载时间，与加载顺序排序
 zinit times
 
-# [core] updates and compiles Zinit - 更新zinit
+# [core] 更新zinit
 zinit self-update
 
-# [core] update plugin or snippets - 更新plugin或snippets
+# [core] 更新plugin或snippets
 zinit update <plg-spec>
 
 $ plg-spec : /bin/ls -1 -D -I "*zinit" "<zinit_cache_folder>/plugins";  \
@@ -21,13 +21,13 @@ $ plg-spec : /bin/ls -1 -D -I "*zinit" "<zinit_cache_folder>/plugins";  \
 ; plugin and snippets part
 ;
 
-# [plugin] [snippets] delete - 删除plugin或snippets
+# [plugin] [snippets] 删除plugin或snippets
 zinit delete <plg_or_URL>
 
-# [plugin] report - 查看 loaded plugin 状态
+# [plugin] 查看 loaded plugin 状态
 zinit report <plg-spec>
 
-# [plugin] cd - 进入plugin目录
+# [plugin] 进入plugin目录
 zinit cd <plg-spec>
 
 $ plg-spec : /bin/ls -1 -D -I "*zinit" "<zinit_cache_folder>/plugins";  \
