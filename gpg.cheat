@@ -6,11 +6,47 @@ gpg --full-generate-key
 # [pub] [show] 查看公钥
 gpg -k 
 
+# [pub] [export] 导出公钥
+gpg --export -a <fingerprint>
+
 # [pub] [delete] 删除公钥
 gpg --delete-keys <fingerprint>
 
 # [sec] [show] 查看私钥
 gpg -K
 
+# [sec] [export] 导出私钥
+gpg --export-secret-keys -a <fingerprint>
+
 # [sec] [delete] 删除私钥
 gpg --delete-secret-keys <fingerprint>
+
+# [import] 从文件导入密钥
+gpg --import <keyfile>
+
+# [encrypt] 使用接收者公钥加密文件
+gpg --encrypt -r <recipient> <file>
+
+# [decrypt] 使用私钥解密文件. 会自动寻找对应的私钥进行解密
+gpg --decrypt <encrypted_file>
+
+# [sign] 使用私钥签名文件
+gpg -u <signer> --sign <file>
+
+# [verify] 验证签名
+gpg --verify <signed_file>
+
+# [revoke] 生成撤销证书
+gpg --gen-revoke <fingerprint>
+
+# [keyserver] 将公钥上传到密钥服务器
+gpg --send-keys <fingerprint>
+
+# [keyserver] 将密钥从密钥服务器下载到本地
+gpg --recv-keys <fingerprint>
+
+# [keyserver] 从密钥服务器搜索密钥
+gpg --search-keys <query>
+
+# [keyserver] 从密钥服务器刷新密钥
+gpg --refresh-keys
